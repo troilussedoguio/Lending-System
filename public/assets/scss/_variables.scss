@@ -1,0 +1,43 @@
+// Colors
+$primary-color: #011b37; //dark blue
+$secondary-color: #fcae01; // light yellow
+$tertiary-color: #f5f6fa; // semi white
+
+$white-color: #ffffff; //  white
+$dark-gray: #526484; //  dark gray
+$light-gray: rgb(128, 148, 174); // light gray
+$font-semiwhite: #0a0a0a;
+
+$border-color: #e5e9f2;
+
+//--------------------------------------------------------------
+// Responsive font sizes using clamp()
+// Headings
+$fs-h1: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);     // 32px → 56px
+$fs-h2: clamp(1.75rem, 1.1rem + 2vw, 2.75rem);   // 28px → 44px
+$fs-h3: clamp(1.5rem, 1rem + 1.5vw, 2.25rem);    // 24px → 36px
+$fs-h4: clamp(1.25rem, 0.8rem + 1vw, 1.75rem);   // 20px → 28px
+$fs-h5: clamp(1.125rem, 0.7rem + 0.8vw, 1.5rem); // 18px → 24px
+$fs-h6: clamp(1rem, 0.7rem + 0.5vw, 1.25rem);    // 16px → 20px
+
+// Body sizes
+$fs-body: clamp(1rem, 0.8rem + 0.4vw, 1.125rem); // 16px → 18px
+$fs-small: clamp(0.875rem, 0.7rem + 0.3vw, 1rem); // 14px → 16px
+//--------------------------------------------------------------
+// Mixins
+@mixin display-flex($align-items, $justify-content) {
+  display: flex !important;
+  align-items: $align-items !important;
+  justify-content: $justify-content !important;
+}
+
+@mixin flex-align($align-items) {
+  display: flex !important;
+  align-items: $align-items !important;
+}
+
+@mixin flex-justify($justify-content) {
+  display: flex !important;
+  justify-content: $justify-content !important;
+}
+//--------------------------------------------------------------

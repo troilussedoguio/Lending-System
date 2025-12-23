@@ -1,0 +1,237 @@
+@use 'variables' as *;
+
+/* modified all inside of form */
+.modal-week-div > div:nth-of-type(even) .collapse-btn {
+    background-color: rgba($secondary-color, 0.2);
+}
+
+.collapse-btn:not(.collapsed) {
+    background-color: rgba($light-gray, 0.2) !important;
+}
+.form-floating-select>label{
+    top: -12px !important;
+    font-size: 11px !important;
+    font-weight: 600;
+    color: $light-gray;
+    opacity: 0.6;
+}
+.img_main_div{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+input:focus {            
+  box-shadow: 0 0 5px rgba($secondary-color, 0.6) !important; 
+  border: 1px rgba($secondary-color, 0.6) solid !important;
+}
+
+// for select2
+input.select2-search__field:focus{
+  outline: unset !important;
+}
+.img_card_div{
+  height: 200px;
+  width: auto;
+  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.375rem;
+  }
+  .img_actions{
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &:hover{
+    .img_actions{
+      display: flex !important;
+      opacity: 1;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.375rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 0.2s ease-in-out;
+      div,a{
+        &:hover{
+          i{
+            color: $secondary-color !important;
+          }
+        }
+      }
+    }
+  }
+}
+.user_actions{
+  a{
+    &:hover{
+      color: $secondary-color !important;
+    }
+  }
+}
+
+// ------------------------------------------------------------
+.main-div{
+    .content-container{
+        .content-bottom{
+          .content-title {
+            margin-bottom: 40px;
+            h5{
+            color: $dark-gray;
+            }
+          }
+          .cards-div{
+            margin-bottom: 13px;
+            .card-items{
+                background-color: #4680ff;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                padding: 25px;
+                margin-bottom: 20px;
+                @include display-flex(center,space-between);
+                .card-details{
+                  div{
+                    color: $white-color;
+                    font-size: $fs-h4 !important;
+                    font-weight: 300 !important;
+                    margin-bottom: 0;
+                  }
+                  small{
+                    color: $white-color;
+                    font-size: 14px;
+                    font-weight: 300 !important;
+                  }
+                }
+                .card-icon{
+                  font-size: $fs-h2;
+                  color: $tertiary-color;
+                }
+                &:hover{
+                  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+                }
+            }
+          }
+          .chart-div{
+            background-color: $white-color !important;
+            padding: 10px 0px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 13px;
+            .chart-top{
+              padding: 20px 30px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            }
+            .chart-format{
+              width: 100%;
+              padding: 20px 20px 0px 20px;
+              height: 463px !important;
+            }
+          }
+
+          .table-main-div{
+            background-color: $white-color;
+            padding: 10px 0px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 13px;
+            .table-header{
+              padding: 20px 30px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+             
+            }
+            .datatable-div{
+              padding: 10px 30px;
+            }
+          }
+
+          .form-main-div{
+            background-color: $white-color;
+            padding: 10px 0px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 13px;
+          }
+          .secondary_btn{
+            border: 1px solid rgba($secondary-color, 0.6);
+            background-color: $secondary-color;
+            color: $white-color;
+            border-radius: 8px;
+            padding: 6px 12px;
+            &:hover{
+              background-color: rgba($secondary-color, 0.8);
+              color: $dark-gray;
+            }
+          }
+        }
+    }
+  
+ }
+
+.content-user-profile{
+  ul.dropdown-menu{
+    width: 300px !important;
+  }
+}
+.dropdown-menu{
+  width: 200px !important;
+  .dropdown-item{
+    i{
+      font-size: $fs-h6;
+      color: $light-gray;
+    }
+    span{
+      font-size: $fs-small;
+      color: $dark-gray;
+    }
+    &:hover{
+      background-color: transparent;
+      i,span{
+        color: $secondary-color !important;
+      }
+    }
+  }
+}
+//--------------------------------------------------------------
+//  select2 dropdown css
+
+.select2-selection__arrow{
+  top: 17px !important;
+}
+
+.select2-container--default .select2-selection--single {
+  height: 58px !important;
+  border: 1px solid #dee2e6 !important;
+}
+.select2-selection__rendered {
+    height: 58px !important;
+    @include flex-align(center);
+    color: $light-gray !important;
+    padding-left: 13px !important;
+    top: 17px !important;
+}
+
+
+.login{
+  small,
+  .form-label{
+    font-size: $fs-small !important;
+  }
+  .input-group{
+
+  }
+}
+//--------------------------------------------------------------
+// Responsive for mobile and tablets
+@media (max-width: 1199px) {
+  .main-div{
+    .content-container{
+       
+    }
+    
+    .collapsed-items::before:nth-child(1) {
+        content: " (ID: " attr(data-id) ")";
+        color: red;
+    }
+  }
+}
+
+

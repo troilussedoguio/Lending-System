@@ -1,0 +1,165 @@
+@use 'variables' as *;
+
+
+table#Datatable-format tbody tr td {
+    color: #838383 !important;
+}
+
+table#Datatable-format tbody tr td:first-child {
+    color: #363636 !important;
+}
+
+
+
+#Datatable-format {
+                
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 10px !important;
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: $secondary-color; // Primary company color
+        color: #fff; // White text for the header
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9; // Light gray for even rows
+    }
+
+    tr:hover {
+        background-color: #f1f1f1; // Hover effect on rows
+    }
+
+    // Responsiveness for table on mobile
+    @media (max-width: 768px) {
+        th, td {
+        padding: 10px;
+        }
+
+        table {
+        font-size: 12px;
+        }
+    }
+}
+
+// DataTables Responsive Class for better mobile view
+table#Datatable-format.dataTable {
+    overflow: none !important;
+}
+
+// Optional: DataTables Footer Styling (if needed)
+#Datatable-format tfoot th {
+    background-color: rgba($secondary-color, 0.2); 
+    color: $secondary-color;
+    font-weight: bold;
+}
+
+
+
+//-----------------------------------------------------------------
+// -------------toggle arrow left down when mobile modified-----------------
+//-----------------------------------------------------------------
+/* Arrow on the first column that toggles child rows */
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, 
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+    border-left: 10px solid $secondary-color !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:before, 
+table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > th.dtr-control:before {
+    border-top: 10px solid $secondary-color !important;
+    border-left: 5px solid transparent !important;
+}
+
+
+//------------------------------------------------------------
+// -----------------pagination modified-----------------------
+//------------------------------------------------------------
+
+div.dt-container div.dt-paging button.dt-paging-button:hover,
+div.dt-container div.dt-paging button.dt-paging-button.current, 
+div.dt-container div.dt-paging button.dt-paging-button.current:hover {
+  background: rgba($secondary-color, 0.2) !important;
+  color: $secondary-color !important;
+  border: 1px solid transparent !important;;
+}
+div.dt-container div.dt-paging button.dt-paging-button.current{
+    font-weight: bold;
+}
+div.dt-container .dt-paging .dt-paging-button:active {
+      box-shadow: inset 0 0 3px transparent !important;
+}
+
+//------------------------------------------------------------
+// -----------------sorting modified-----------------------
+//------------------------------------------------------------
+table.dataTable thead > tr > th.dt-ordering-desc span.dt-column-order:after,
+table.dataTable thead > tr > th.dt-ordering-asc span.dt-column-order:before{
+    color: $primary-color !important;   /* change to any color you want */
+    opacity: 0.4!important;
+}
+
+//------------------------------------------------------------
+// -----------------select modified-----------------------
+//------------------------------------------------------------
+
+.dt-length select{
+    border-color: $light-gray !important;
+    border-radius: 4px;
+    color: $dark-gray;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba($secondary-color, 0.6) !important; 
+        border-color: rgba($secondary-color, 0.6) !important; 
+    }
+}
+.dt-length label{
+    color: $light-gray;
+}
+.dt-search input{
+    width: 260px;
+    &:focus{
+        outline: none;
+        border-color: #4A90E2;   /* your color */
+    }
+}
+
+.dt-search label{
+    color: $light-gray;
+}
+
+
+
+//-----------------------------------------------------------------
+// -------------hidden column when mobile modified-----------------
+//-----------------------------------------------------------------
+@media (max-width: 600px) {
+    /* Title (comes from TH) */
+    table.dataTable tr.child ul.dtr-details li .dtr-title {
+        color: #363636 !important;    
+        font-weight: bold;
+    }
+
+    /* Value text */
+    table.dataTable tr.child ul.dtr-details li .dtr-data {
+         color: #838383 !important;
+    }
+    div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end  {
+        justify-content: center !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .dt-search label{
+        display: none;
+    }
+}
+

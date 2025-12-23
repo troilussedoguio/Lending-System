@@ -1,0 +1,130 @@
+@use 'variables' as *;
+
+$danger-gradient: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+$danger-gradient-hover: linear-gradient(135deg, #ee5a6f 0%, #dc3545 100%);
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+.modal-content {
+  
+  .btn:focus,
+  .btn:active{
+    border: 0 !important;
+  }
+  .warning-text {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 12px 16px;
+    border-radius: 6px;
+    color: #856404;
+    font-size: 0.9rem;
+    margin-top: 16px;
+
+    strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+  .btn-custom-cancel{
+    background: #e9ecef;
+    color: #495057;
+    border-radius: 8px;
+    font-weight: 600;
+    @include transition();
+    @include box-shadow(0 4px 12px rgba(238, 90, 111, 0.3));
+
+    &:hover {
+      background: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
+      transform: translateY(-1px);
+      @include box-shadow(0 6px 16px rgba(238, 90, 111, 0.4));
+    }
+  }
+  .btn-custom-delete{
+    background: $danger-gradient;
+    color: $white-color;
+    border-radius: 8px;
+    font-weight: 600;
+    @include transition();
+    @include box-shadow(0 4px 12px rgba(238, 90, 111, 0.3));
+
+    &:hover {
+      background: $danger-gradient-hover;
+      transform: translateY(-1px);
+      @include box-shadow(0 6px 16px rgba(238, 90, 111, 0.4));
+      color: $white-color;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  .btn-custom-save{
+    background: linear-gradient(135deg, #6b75ff 0%, #6b75ff 100%);
+    color: $white-color;
+    border-radius: 8px;
+    font-weight: 600;
+    @include transition();
+    @include box-shadow(0 4px 12px rgba(107, 117, 255, 0.4));
+
+    &:hover {
+      background: linear-gradient(135deg, #6b75ff 0%, #6b75ff 100%);
+      transform: translateY(-1px);
+      @include box-shadow(0 6px 16px rgba(107, 117, 255, 0.4));
+      color: $white-color;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
+
+  .btn-custom-edit{
+    background: linear-gradient(135deg, #ffc107 0%, #ffc107 100%);
+    color: $white-color;
+    border-radius: 8px;
+    font-weight: 600;
+    @include transition();
+    @include box-shadow(0 4px 12px rgba(255, 193, 7, 0.4));
+
+    &:hover {
+      background: linear-gradient(135deg, #ffc107 0%, #ffc107 100%);
+      transform: translateY(-1px);
+      @include box-shadow(0 6px 16px rgba(255, 193, 7, 0.4));
+      color: $white-color;
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  .modal-footer,
+  .modal-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)
+  }
+  
+  .modal-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #838383;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .close-modal i.ri-close-line {
+    display: inline-block; /* REQUIRED */
+    transition: transform 0.4s ease;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+      transform: rotate(90deg);
+    }
+  }
+
+}

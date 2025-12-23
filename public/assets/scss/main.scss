@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'sidebar' as *;
+@use 'content' as *;
+@use '_datatable' as *;
+@use '_modal' as *;
+//--------------------------------------------------------------
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background-color: $tertiary-color !important;
+}
+
+

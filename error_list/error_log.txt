@@ -1,0 +1,78 @@
+[2025-12-19 18:35:12] Error Code: 0 | Message: Loan Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 616
+[2025-12-19 18:47:18] Error Code: 0 | Message: This email already taken! | File: C:\xampp\htdocs\loan-management-system\models\User.php | Line: 151
+[2025-12-19 18:56:21] Error Code: 0 | Message: Deadline date is missing | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 342
+[2025-12-19 19:03:27] Error Code: 0 | Message: Deadline date is missing | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 342
+[2025-12-19 19:03:28] Error Code: 0 | Message: Deadline date is missing | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 342
+[2025-12-19 19:09:34] Error Code: 0 | Message: Deadline date is missing | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 342
+[2025-12-19 19:09:35] Error Code: 0 | Message: Deadline date is missing | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 342
+[2025-12-20 12:00:54] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:01:13] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:01:14] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:08:12] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:08:21] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:08:21] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:08:26] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:09:11] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:09:12] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:09:13] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:09:18] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM loan_weekly lw
+                LEFT JOIN(
+                    SELECT i...' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 340
+[2025-12-20 12:47:29] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p_collector
+                FROM loan
+                WHERE loan_status = 1' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 372
+[2025-12-20 12:47:53] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p_collector
+                FROM loan
+                WHERE loan_status = 1' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 372
+[2025-12-20 12:47:59] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p_collector
+                FROM loan
+                WHERE loan_status = 1' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 372
+[2025-12-20 12:48:03] Error Code: 42000 | Message: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'p_collector
+                FROM loan
+                WHERE loan_status = 1' at line 5 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 372
+[2025-12-21 14:18:58] Error Code: 0 | Message: This email already taken! | File: C:\xampp\htdocs\loan-management-system\models\User.php | Line: 153
+[2025-12-21 07:28:23] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:29:26] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:29:34] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:29:57] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:31:13] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:31:49] Error Code: 0 | Message: Failed to delete image:  | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 671
+[2025-12-21 07:33:46] Error Code: 0 | Message: Failed to delete image: l_bf2a.png | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 672
+[2025-12-21 14:39:03] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 345
+[2025-12-21 14:39:14] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 345
+[2025-12-21 14:39:15] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 345
+[2025-12-21 14:39:20] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 345
+[2025-12-21 14:39:31] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 345
+[2025-12-21 14:39:41] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:40:07] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:40:15] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:40:16] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:41:02] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:41:02] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:41:10] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:41:33] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:41:49] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:42:10] Error Code: 0 | Message: Dashboard Failed to Fetch | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:42:32] Error Code: 0 | Message: Dashboard Failed to Fetch 4 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:43:35] Error Code: 0 | Message: Dashboard Failed to Fetch 4 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
+[2025-12-21 14:44:46] Error Code: 0 | Message: Dashboard Failed to Fetch 4 | File: C:\xampp\htdocs\loan-management-system\models\Loans.php | Line: 343
